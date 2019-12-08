@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
     loadLocalStorage();
+    timeColor();
 $(".current-day").text(moment().format("D dddd MMMM"));
 
 
@@ -30,11 +31,17 @@ function loadLocalStorage() //for each input.schedule-input class, get the id ou
 function timeColor(){
     $(".schedule-input").each(function(){
         var id = $(this).attr("id");
-        
+        var fieldTime = moment().format(id, "hh:mmA"); // formatting the id fieldTime to make it into a "moment" *converting to a moment
+        var thing = moment().isAfter("2010-03-14");
+        console.log(thing)
+        console.log(fieldTime);
+        console.log(moment());
     });
 };
 
 
+//when comparing dates and times, formmating is dumb importante. must compare the exact same string. must be compatable, with each other as well with momentjs library. 
+//read more doc, use if statements for if its true that it is after *apply styling* if else *different style* (CSS) 
 
 
 });
