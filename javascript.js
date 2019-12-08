@@ -1,16 +1,54 @@
-const m = moment();
-
-//console.log(m.format("dddd MMM Mo YYYY"));
-//console.log(m.format("[Yeah the day is] dddd [and we're in] YYYY"))
-
-alert(m.format("LLL")) //current date and time//
 
 
+$(document).ready(function(){
+    loadLocalStorage();
+$(".current-day").text(moment().format("D dddd MMMM"));
 
-const datePickerElement = $(".date-picker");
-const selectedDateElement = $(".date-picker .selected-date");
-const datesElement = $(".date-picker .dates");
+
+  //this alert is to be replaced by a function saving info to the page upon refresh//
+
+  $(".save-button").click(function(){  //find save button, when clicked on find schedule-input class, 
+    $(".schedule-input").each(function(){
+            
+        var id = $(this).attr("id");
+        var value = $(this).val();
+       localStorage.setItem(id, value);  //for each class get its's ID and value (value typed into input box), and store them juntos, 
+        });
+      });
 
 
-//Event Listeners
-$(document).click(datePickerElement).toggle(datePickerElement);
+function loadLocalStorage() //for each input.schedule-input class, get the id out of the class, find the matching value 
+{
+ $("input.schedule-input").each(function(){    
+        var id = $(this).attr("id");
+        var value = localStorage.getItem(id);
+
+        $(this).val(value);
+    }); 
+};
+
+function timeColor(){
+    $(".schedule-input").each(function(){
+        var id = $(this).attr("id");
+        
+    });
+};
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+

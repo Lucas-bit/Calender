@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href= "stylesheet.css">
-
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Custom<span>Day</span>Planner</h1>
 
-    <div class="date-picker">
-        <div class = "selected-date"> 12 / 8 / 2019</div>
 
-        <div class = "dates">
-            <div class = "month">
-                <div class = "arrows-prev-mth">&lt;</div>
-                <div class = "mth"></div>
-                <div class = "arrows-next-mth">&gt;</div>
-            </div>
+        <body>
+                <div class="container">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th> Current Date:
+                            <span class = "current-day"></span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                            <td>9am <input id="9am" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                      <tr>
+                            <td>10am <input id="10am" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                      <tr>
+                            <td>11am <input id="11am" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                      <tr>
+                            <td>12pm <input id="12pm" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                      <tr>
+                            <td>1pm <input id="1pm" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                      <tr>
+                            <td>2pm <input id="2pm" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                      <tr>
+                            <td>3pm <input id="3pm" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                      <tr>
+                            <td>4pm <input id="4pm" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                      <tr>
+                            <td>5pm <input id="5pm" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                      <tr>
+                            <td>6pm <input id="6pm" class = "schedule-input" type="text" placeholder="enter text here"></td>
+                      </tr>
+                       
 
-            <div class = "days"></div>
-        </div>
-    </div>
+                      </tr>
+                    </tbody>
+                  </table>
 
-    
-    <script src = "moment.js"></script>
-    <script src = javascript.js></script>
+                  <button class = "save-button">Save</button>
+                </div>
+                </body>
+
+
+<Script src = "moment.js"></Script>
+<script src = "javascript.js"></script>
 
 </body>
 </html>
