@@ -1,0 +1,66 @@
+body {
+    background-color: lavenderblush;
+}
+
+.schedule-input {
+    color: black;
+    background-color: #e0cee8;
+    font-size: 15px;
+    border-radius: 6px;
+    padding-left: 10px;
+    border: 1px solid black;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 15px;
+    
+}
+
+tbody {
+
+    background-color : #df9da9;
+    box-shadow: 10px 10px 5px black;
+    border: 2px solid black;
+    border-top: 2px solid black;
+   
+}
+
+.save-button {
+    color: black;
+    background-color: #df9da9;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 10px, 10px, 10px, 10px;
+    text-align: center; 
+    border: 1px solid black;
+    width: 75px;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 20px;
+
+}
+
+td {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+th {
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    border-bottom: 2px solid black;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.before-present{
+    background-color: #df9da9;
+    opacity: 50%;
+}
+
+.future-time {
+    background-color: #e0c389;
+}
