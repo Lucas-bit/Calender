@@ -1,9 +1,7 @@
-
-
 $(document).ready(function(){
     loadLocalStorage();
     timeColor();
-$(".current-day").text(moment().format("D dddd MMMM"));
+$(".current-day").text(moment().format("D dddd MMMM")); // creates the text of the date using the specific moment.js format and applies it to the ".current-day" class
 
 
   
@@ -11,8 +9,8 @@ $(".current-day").text(moment().format("D dddd MMMM"));
   $(".save-button").click(function(){  //find save button, when clicked on find schedule-input class, 
     $(".schedule-input").each(function(){
             
-        var id = $(this).attr("id");
-        var value = $(this).val();
+        var id = $(this).attr("id"); //assing my id's a variable 
+        var value = $(this).val(); // assing the value typed in to the input box a variable
        localStorage.setItem(id, value);  //for each class get its's ID and value (value typed into input box), and store them juntos, 
         });
       });
@@ -34,13 +32,13 @@ function timeColor(){
         var id = $(this).attr("id");
         var fieldTime = moment().format(id, "hh:mmA"); // formatting the id fieldTime to make it into a "moment" *converting to a moment
         var thing = moment().isAfter(id);
-        var scheduleInput = $(".schedule-input")
+        var scheduleInput = $(".schedule-input");
+        
 
-
-        if (moment("hh:mmA") >= scheduleInput){
-            scheduleInput.css({"opacity": "50%"})
+        if (moment().format("hh:mmA") >= fieldTime){             //this if statement is where im having issues
+            scheduleInput.css({"opacity": "50% !important"}) //!important overides css
         } else {
-            scheduleInput.css({"opacity": "5%"})
+            scheduleInput.css({"opacity": "25%"})
            
         }
         

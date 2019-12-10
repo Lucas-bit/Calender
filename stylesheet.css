@@ -49,7 +49,7 @@ td {
 th {
     font-size: 30px;
     font-family: 'Indie Flower', cursive;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid black !important;
 }
 
 .table {
