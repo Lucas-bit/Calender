@@ -37,10 +37,11 @@ function timeColor(){
 
 
         if (moment() >= moment(fieldTime)){             //this if statement is where im having issues
-            scheduleInput.css({"opacity": "25%"}) //!important overides css
-        } else {
+            scheduleInput.css({"opacity": "45%"}) //!important overides css
+        } else if (moment().format(id, "hh:mmA") === moment(fieldTime)){
+            scheduleInput.css(({"background-color": "purple"}))
+        } else { 
             scheduleInput
-           
         }
            
     }
