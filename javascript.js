@@ -1,6 +1,6 @@
 $(document).ready(function(){
     loadLocalStorage();
-    timeColor();
+     timeColor();
 $(".current-day").text(moment().format("D dddd MMMM")); // creates the text of the date using the specific moment.js format and applies it to the ".current-day" class
 
 
@@ -42,6 +42,11 @@ function timeColor(){
             scheduleInput.css({"opacity": "25%"})
            
         }
+           
+    }
+
+       
+        
         
         // console.log(thing)
         // console.log(fieldTime);
@@ -51,7 +56,7 @@ function timeColor(){
 
         // console.log(scheduleInput)
        
-})}
+)}
 
 
 
