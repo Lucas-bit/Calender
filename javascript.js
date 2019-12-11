@@ -30,15 +30,14 @@ function loadLocalStorage() //for each input.schedule-input class, get the id ou
 function timeColor(){
     $(".schedule-input").each(function(){
         var id = $(this).attr("id");
-        var fieldTime = moment().format(id, "hh:mmA"); // formatting the id fieldTime to make it into a "moment" *converting to a moment //have moment create a date object of a string
+        var fieldTime = moment().format(id, "HH"); // formatting the id fieldTime to make it into a "moment" *converting to a moment //have moment create a date object of a string
         // var thing = moment().isAfter(id);
         var scheduleInput = $(this);
         console.log(fieldTime)
 
-
         if (moment() >= moment(fieldTime)){             //this if statement is where im having issues
             scheduleInput.css({"opacity": "45%"}) //!important overides css
-        } else if (moment().format(id, "hh:mmA") === moment(fieldTime)){
+        } else if (fieldTime === moment(fieldTime)){
             scheduleInput.css(({"background-color": "purple"}))
         } else { 
             scheduleInput
