@@ -37,9 +37,9 @@ function timeColor(){
 
 
         if (moment() >= moment(fieldTime)){             //this if statement is where im having issues
-            scheduleInput.css({"opacity": "50% !important", "background-color": "red"}) //!important overides css
+            scheduleInput.css({"opacity": "25%"}) //!important overides css
         } else {
-            scheduleInput.css({"opacity": "25%"})
+            scheduleInput
            
         }
            
