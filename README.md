@@ -1,4 +1,4 @@
-# DayPlanner
+# Day Planner
 This web application functions as an event planner for a day of work.
 
 # Installation
